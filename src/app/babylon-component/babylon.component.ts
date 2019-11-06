@@ -99,9 +99,6 @@ export class BabylonComponent implements OnInit, AfterViewInit {
     // Start the particle system
     snowParticleSystem.start();
 
-
-    snowParticleSystem.start();
-
     return scene;
   }
 }
