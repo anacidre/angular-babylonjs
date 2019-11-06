@@ -1,0 +1,6 @@
+
+.renderingCanvas{
+  height: 800px;
+  max-width: 100%;
+  touch-action: none;
+}
