@@ -55,9 +55,9 @@ export class BabylonComponent implements OnInit, AfterViewInit {
 
     // Create ground
     const groundMaterial = new StandardMaterial('ground', scene);
-    groundMaterial.diffuseTexture = new Texture('http://www.babylonjs-playground.com/textures/distortion.png', scene);
+    groundMaterial.diffuseTexture = new Texture('https://raw.githubusercontent.com/anacidre/angular-babylonjs/master/src/assets/textures/distortion.png', scene);
 
-    const ground = Mesh.CreateGroundFromHeightMap('ground', 'http://www.babylonjs-playground.com/textures/distortion.png', 40, 40, 100, -2, -6, scene, false);
+    const ground = Mesh.CreateGroundFromHeightMap('ground', 'https://raw.githubusercontent.com/anacidre/angular-babylonjs/master/src/assets/textures/distortion.png', 40, 40, 100, -2, -6, scene, false);
     ground.material = groundMaterial;
 
     // Create giftwrap
@@ -75,7 +75,7 @@ export class BabylonComponent implements OnInit, AfterViewInit {
     const snowParticleSystem = new ParticleSystem('particles', 5000, scene);
 
     // Texture of each particle
-    snowParticleSystem.particleTexture = new Texture('http://www.babylonjs-playground.com/textures/flare.png', scene);
+    snowParticleSystem.particleTexture = new Texture('https://raw.githubusercontent.com/anacidre/angular-babylonjs/master/src/assets/textures/flare.png', scene);
 
     // Where the particles come from
     snowParticleSystem.emitter = new Vector3(0, 5, 0); // the starting object, the emitter
